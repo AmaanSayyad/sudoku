@@ -1,3 +1,4 @@
+
 var chunk = require('lodash.chunk');
 
 function newCell(i, j, value, editable) {
@@ -39,7 +40,6 @@ function checkSubset(array) {
 function checkConflicts(cells) {
   markAllWithoutConflict(cells);
 
-  // check horizontal lines
   for (var i = 0; i < 9; i++) {
     var arr = [];
     for (var j = 0; j < 9; j++) {
@@ -48,7 +48,6 @@ function checkConflicts(cells) {
     checkSubset(arr);
   }
 
-  // check vertical lines
   for (var j = 0; j < 9; j++) {
     var arr = [];
     for (var i = 0; i < 9; i++) {
@@ -57,7 +56,6 @@ function checkConflicts(cells) {
     checkSubset(arr);
   }
 
-  // check squares
   var c = cells;
   checkSubset([c[0][0], c[0][1], c[0][2], c[1][0], c[1][1], c[1][2], c[2][0], c[2][1], c[2][2]]);
   checkSubset([c[3][0], c[3][1], c[3][2], c[4][0], c[4][1], c[4][2], c[5][0], c[5][1], c[5][2]]);
@@ -72,7 +70,6 @@ function checkConflicts(cells) {
   checkSubset([c[6][6], c[6][7], c[6][8], c[7][6], c[7][7], c[7][8], c[8][6], c[8][7], c[8][8]]);
 }
 
-// checkConflicts must run first
 function isComplete(cells) {
   for (var i = 0; i < 9; i++) {
     for (var j = 0; j < 9; j++) {
