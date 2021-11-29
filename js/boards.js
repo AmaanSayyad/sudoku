@@ -887,8 +887,7 @@ var Boards = {
       case 'medium':
         return getRamdomBoardFor(medium);
       case 'hard':
-        return getRamdomBoardFor(hard);
-    }
+        return getRamdomBoardFor(hard);}
   }
 }
 
