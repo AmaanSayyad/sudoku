@@ -9,13 +9,13 @@
     "buildcss": "lessc --clean-css ./css/main.less bundle.css"
   },
   "author": {
-    "name": "Andrey Nering",
-    "email": "andrey@nering.com.br",
-    "url": "https://andrey.nering.com.br"
+    "name": "Amaan Sayyad",
+    "email": "amaansayyad@yahoo.com",
+    "url": "https://github.com/AmaanSayyad"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andreynering/sudoku.git"
+    "url": "https://github.com/amaansayyad/sudoku.git"
   },
   "homepage": "https://sudoku.js.org",
   "license": "MIT",
