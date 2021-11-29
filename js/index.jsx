@@ -1,3 +1,4 @@
+
 var React = require('react');
 import {render} from 'react-dom';
 var Store = require('./store');
